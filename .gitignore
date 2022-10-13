@@ -1,0 +1,8 @@
+# dir
+buoy/
+ncei/
+tmp/
+DBSCAN/
+
+# GMT
+gmt.*
