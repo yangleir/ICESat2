@@ -3,6 +3,8 @@ buoy/
 ncei/
 tmp/
 DBSCAN/
+llc4230/
+dtu/
 
 # GMT
 gmt.*

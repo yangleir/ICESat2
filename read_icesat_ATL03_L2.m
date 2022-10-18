@@ -5,7 +5,7 @@
 
 %%
 %GMT
-cd C:\Users\yangleir\Documents\MATLAB\icesat
+cd C:\Users\yangleir\Documents\MATLAB\icesat\ICESat2
 oldpath = path; % Add GMT path. The GMT is available from https://github.com/GenericMappingTools/gmt
 path(oldpath,'C:\programs\gmt6exe\bin'); % Add GMT path
 

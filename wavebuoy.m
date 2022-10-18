@@ -1,15 +1,16 @@
-% 东沙浮标数据绘图
+% 南海某浮标数据绘图
 %%
 %GMT
-cd C:\Users\yangleir\Documents\MATLAB\icesat
+cd C:\Users\yangleir\Documents\MATLAB\icesat\ICESat2
 oldpath = path; % Add GMT path. The GMT is available from https://github.com/GenericMappingTools/gmt
 path(oldpath,'C:\programs\gmt6exe\bin'); % Add GMT path
 
 format long
 %% 
-!gawk "NR>20 && !/-/ {print $2, $3}" ./buoy/2019_C6V27_wave.txt > ./buoy/2019.d
-!gawk "NR>20 && !/-/ {print $2, $3}" ./buoy/2020_C6V27_wave.txt > ./buoy/2020.d
-!gawk "NR>20 && !/-/ {print $2, $3}" ./buoy/2021_C6V27_wave.txt > ./buoy/2021.d
+!gawk "NR>20 && !/-/ {print $2, $3}" ./buoy/2019.txt > ./buoy/2019.d
+!gawk "NR>20 && !/-/ {print $2, $3}" ./buoy/2020.txt > ./buoy/2020.d
+!gawk "NR>20 && !/-/ {print $2, $3}" ./buoy/2021.txt > ./buoy/2021.d
+
 wb2019=load ('./buoy/2019.d');
 wb2020=load ('./buoy/2020.d');
 wb2021=load ('./buoy/2021.d');
