@@ -16,3 +16,4 @@ gmt begin nanhai png
 	gmt grdimage ssh.nc  -R7000/8000/8000/9200 -JX7/7c -B200  -I+d -X11c
 gmt end show 
 
+del illum.nc slope.nc slope-norm.nc
